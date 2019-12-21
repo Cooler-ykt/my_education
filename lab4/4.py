@@ -2,6 +2,7 @@ from pictures1 import *
 
 
 
+
 brushColor("cyan")
 rectangle(0,0, 500, 600)
 sun(420, 100, 15, 470, 25)
