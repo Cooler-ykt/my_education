@@ -141,7 +141,7 @@ def paint_cells():
 
 
 
-@task
+@task(delay=0.04)
 def task_8_10():
     init_global_params()
     explore_corridor()

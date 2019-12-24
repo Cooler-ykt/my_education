@@ -3,9 +3,14 @@
 from pyrob.api import *
 
 
-@task
+@task(delay=0.04)
 def task_8_27():
-    pass
+    while not cell_is_filled():
+        move_up()
+    move_left()
+    if not cell_is_filled():
+        move_right(2)
+
 
 
 if __name__ == '__main__':

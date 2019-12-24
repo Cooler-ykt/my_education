@@ -3,7 +3,7 @@
 from pyrob.api import *
 
 
-@task
+@task(delay=0.04)
 def task_8_4():
     while not wall_is_on_the_right():
         if wall_is_above() + wall_is_beneath() == 2:
